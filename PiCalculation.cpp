@@ -28,7 +28,10 @@ double pi(double epsilon)
 
 int qwwe;
 int qwerty2;
+<<<<<<< HEAD
 bool blin;
+=======
+>>>>>>> origin/master
 
 int main()
 {

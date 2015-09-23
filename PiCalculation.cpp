@@ -26,12 +26,10 @@ double pi(double epsilon)
 	return (4*p);
 }
 
-<<<<<<< HEAD
 int qwwe;
 int qwerty2;
-=======
+bool blin;
 
->>>>>>> origin/master
 int main()
 {
 	return(0);

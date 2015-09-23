@@ -27,7 +27,24 @@ int nulls (int n)
 	}
 	return num;
 }
+
+void test(int ans, int number)
+{
+	if (nulls(number) == ans)
+		cout << "OK" << endl;
+	else
+		cout << "Wrong Answer  " << number << endl;
+}
+
+
 int main()
 {
+	test(1, 5);
+	test(3, 17);
+	test(0, 1);
+	test(1, 6);
+	test(4, 20);
+	test(12, 50);
+	test(7, 33);
 	return(0);
 }

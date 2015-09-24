@@ -28,7 +28,25 @@ double sinus(int x, double eps)
 	return(ss);
 }
 
+
+void assert (double test, double x, double eps)
+{
+double result = sinus (x, eps);
+	if (abs(result-test)<=eps)
+		cout<<"OK"<<endl;
+	else
+		cout<<"FAIL! Check "<< "x = "<<x<<" eps = "<<eps<<endl;
+}
+
 int main()
 {
-	return(0);
+double PI = acos (-1.);
+assert (sin(PI), PI, 0.0001);
+assert (sin(PI/2.), PI/2., 0.0001);
+assert (sin (0.), 0, 0.001);
+assert (sin (PI/4.),PI/4., 0.00001);
+assert (sin (7.*PI/8.), 7.*PI/8., 0.0001);
+assert (sin (-5.*PI/8.), -5.*PI/8., 0.0001);
+assert (sin (12.*PI/19.), 12.*PI/19., 0.0001);
+
 }

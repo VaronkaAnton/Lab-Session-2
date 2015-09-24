@@ -9,7 +9,7 @@ signed long long fact(int n)
 	return(sd);
 }
 
-double sinus(int x, double eps)
+double sinus(double x, double eps)
 {
 	double ss = 0, ss1, ss2;
 	for (int i = 0; 0 == 0; i++)
@@ -22,7 +22,7 @@ double sinus(int x, double eps)
 		else 
 			ss = ss - ss1;
 		
-		if (ss1 <= eps)
+		if (abs(ss1) <= eps)
 			break;
 	}
 	return(ss);
